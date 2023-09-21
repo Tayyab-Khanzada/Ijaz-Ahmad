@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_01</title>
+    <link rel="stylesheet" href="backend.php">
+</head>
+<style>
+    #body{
+        width: 40%;
+        margin: auto;
+    }
+    .input{
+        width: 50%;
+        margin-bottom: 6px;
+    }
+
+</style>
+<body>
+    <div id="body">
+        
+        <div
+            style=" background-color:rgb(57, 215, 205);padding:20px 0; ">
+            <img src="./mountain-img" alt="mountain image" style="width: 95%; height: 300px; margin-left: 2%; margin-right: 2%;">
+            <form method="post" action="form1.php" style="margin-left: 10px;" >
+                <h1>Customer Information Form </h1>
+                <p>Please tell us about yourself so we can help you with your travel.</p>
+                Your name:
+                <input class="input" type="text" name="name" id="name"><br>
+                Your e-mail:
+                <input class="input" type="email" name="email"><br>
+                Your Web site:
+                <input class="input" type="text" name="website"><br>
+                Comment:<br>
+                <textarea style="width:90%; padding:2% 4%;" name="comment"cols="50" rows="4"></textarea><br>
+                Service:
+                <input type="checkbox" name="Flight">
+                Flight
+                <input type="checkbox" name="Hotel">
+                Hotel
+                <input type="checkbox" name="Car">
+                Car <br><br>
+                Returning customer:
+                <input type="radio" name="customer" id="Yes">Yes
+                <input type="radio" name="customer" id="No">No<br><br>
+                Continent:
+                <select name="Contry">
+                    <option value="Noth America">North America</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Uk">UK</option>
+                    <option value="England">England</option>
+                </select><br><br>
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+

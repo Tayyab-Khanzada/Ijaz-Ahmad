@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_02</title>
+</head>
+<style>
+    form {
+        width: 90%;
+        margin: auto;
+    }
+
+    form label,
+    input {
+        margin: 4px 0;
+        width: 100%;
+        height: 20px;
+    }
+
+    textarea {
+        padding: 2%;
+        width: 96%;
+    }
+
+    #button {
+        width: 101%;
+        height: 30px;
+        border: none;
+        color: white;
+        background-color: green;
+    }
+
+    #course {
+        margin-top: 15px;
+    }
+
+    .inline {
+        width: auto;
+        margin: 0%;
+    }
+</style>
+
+<body>
+    <div style="background-color:rgb(108, 161, 204) ; padding: 10px 0; width: 40%;margin: auto;">
+
+        <h1 style="text-align: center; margin-bottom: 0%;">Student Register Form</h1>
+        <hr style="color:white ; width: 90%;">
+        <form action="form2.php" method="post">
+            Firstname:
+            <input type="text" name="fname" id="fname" placeholder="Firstname">
+            Middlename:
+            <input type="text" name="mname" placeholder="Midname">
+            Lastname:
+            <input type="text" name="ename" placeholder="lastname"><br><br>
+            Course:
+            <select name="course">
+                <option value="web">English</option>
+                <option value="edit">Urdu</option>
+                <option value="game">Math</option>
+            </select><br><br>
+            Gender:
+            <input class="inline" type="radio" name="gender" value="male" id="male">
+            Male
+            <input class="inline" type="radio" name="gender" value="female" id="female">Female
+            <input class="inline" type="radio" name="gender" value="other" id="other">
+            other <br><br>
+            Phone:
+            <input type="number"placeholder="+92">
+            <input type="number" placeholder="phone no">
+            <label for="current">Current Address:</label>
+            <textarea id="Current" cols="71" rows="3" name="current" placeholder="current address"></textarea>
+            Email
+            <input type="text" name="email"placeholder="enter email">
+            Password
+            <input type="text" name="pass"placeholder="enter password">
+            Re-type Password
+            <input type="password" name="repass" id="repass" placeholder="Re-type password">
+            <input id="button" type="submit" value="Register">
+        </form>
+    </div>
+</body>
+
+</html>
